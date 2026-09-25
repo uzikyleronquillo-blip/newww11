@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🐱 CAT DASH — Career Maze Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🐱 CAT DASH</h1>
+    <p>Career Maze Challenge</p>
+  </header>
+
+  <main>
+    <section id="setup" class="panel">
+      <h2>Choose Your Players</h2>
+      <p>Enter 2–5 player/team names, then start the race.</p>
+      <div id="playerInputs"></div>
+      <div class="setup-buttons">
+        <button id="addPlayer">+ Add Player</button>
+        <button id="startGame" class="primary">🚀 Start Game</button>
+      </div>
+      <p class="note">Tip: Open this page on several devices only if you later connect a real-time multiplayer server. This version is a local classroom game for one screen/device.</p>
+    </section>
+
+    <section id="game" class="panel hidden">
+      <div class="topbar">
+        <div><strong>Question <span id="qNum">1</span>/<span id="qTotal"></span></strong></div>
+        <div>⏱️ <span id="timer">20</span>s</div>
+        <button id="nextBtn" class="small hidden">Next Question →</button>
+      </div>
+
+      <div class="question-box">
+        <div class="category" id="category"></div>
+        <h2 id="question"></h2>
+      </div>
+
+      <div id="maze" class="maze"></div>
+
+      <div class="status">
+        <div id="message">Each cat chooses an answer. Click a lane/answer.</div>
+        <div class="scores" id="scores"></div>
+      </div>
+    </section>
+
+    <section id="results" class="panel hidden">
+      <h2>🏁 Race Results</h2>
+      <div id="resultList"></div>
+      <button id="restart" class="primary">🔄 Play Again</button>
+    </section>
+  </main>
+
+  <footer>CAT DASH • Career & Job English Classroom Game</footer>
+  <script src="script.js"></script>
+</body>
+</html>
